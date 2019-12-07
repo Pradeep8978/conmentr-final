@@ -21,6 +21,12 @@
   "author": "CodeWorkr",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/node": "^7.4.5",
+		"@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+		"@babel/polyfill": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
     "ace-builds": "^1.4.7",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
