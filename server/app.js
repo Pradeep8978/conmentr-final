@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "test") {
   });
 }
 app.disable('etag');
-// if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
     // Serve any static files
     app.use(express.static(path.join(__dirname, '../client/build')));
   
@@ -31,7 +31,7 @@ app.disable('etag');
     app.get('*', function (req, res) {
       res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
     });
-  // }
+  }
 
 // const app = express();
 app.use(cookieParser());
