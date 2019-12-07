@@ -85,7 +85,7 @@ module.exports = {
     });
     // res.setHeader('Authorization', token);
     console.log("USER OBJECT=>", userObj)
-    res.status(200).json({...userObj.profile, token, id: req.user._id});
+    res.status(200).json({...userObj.profile, token, id: userObj._id});
   },
 
   signIn: async (req, res, next) => {
