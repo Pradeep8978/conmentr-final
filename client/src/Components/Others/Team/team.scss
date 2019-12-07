@@ -1,0 +1,21 @@
+.team{
+  #carouselIndicators{
+    .carousel-indicators{
+      bottom: -40px;
+      li{
+        background-color: rgba(0,0,0,0.5);
+      }
+      .active{
+        background-color: rgb(0,0,0);
+      }
+    }
+  }
+  .carousel-inner{
+    .carousel-item{
+      img{
+        height: 300px;
+        width: 500px;
+      }
+    }
+  }
+}

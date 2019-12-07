@@ -1,0 +1,32 @@
+// @import "../../../styles/variables";
+// .projectCard{
+//     background: #FFF;
+//     border: none;
+//     box-shadow: 3px 3px 5px 3px #ccc;
+//     border-radius: 0;
+//     .card-body{
+//       img{
+//         height: 45px;
+//         width: 145px;
+//       }
+//       p{
+//         font-size: $primary-font-size;
+//         text-align: justify;
+//       }
+//       .btn{
+//         &:focus{
+//           box-shadow: none;
+//           border: none;
+//         }
+//       }
+//       .rate, .duration{
+//         padding: 8px 0;
+//       }
+//      }
+//  }
+
+// @media(min-width: $breakpoint-desktop){
+//   .projectCard{
+//     margin-left: -15px;
+//   }
+// }

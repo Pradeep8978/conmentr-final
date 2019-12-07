@@ -1,0 +1,41 @@
+// @import "../../../styles/variables";
+// .textCard {
+//   background: transparent;
+//   border: none;
+//   .card-body {
+//     font-size: $primary-font-size;
+//     p {
+//       font-size: $primary-font-size;
+//       text-align: justify;
+//     }
+//     .btn{
+//       &:focus{
+//         box-shadow: none;
+//         border: none;
+//       }
+//     }
+//   }
+// }
+
+// .textCard.home-text {
+//   .card-body {
+//     p {
+//       font-size: $card-paragrah-text;
+//       font-family: 'Dosis', sans-serif;
+//     }
+//   }
+// }
+
+// .connect-learn {
+//   .card-text {
+//     font-size: 18px !important;
+//     font-weight: 600;
+//   }
+// }
+
+// @media(max-width: $breakpoint-mobile){
+//   .textCard{
+//     margin-top: 60px;
+//     margin-bottom: 30px;
+//   }
+// }

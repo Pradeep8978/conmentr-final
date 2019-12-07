@@ -1,0 +1,44 @@
+.sticky-top.scrolled {
+	box-shadow: 0 8px 6px -6px #D3D3D3;
+	background-color: #0ba38f;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.sticky-top.scrolled a {
+	color: white;
+}
+
+a {
+	color: #0ba38f;
+}
+
+.logo {
+	content: url("../../../assets/images/logo.png");
+	width: 170px;
+}
+
+.landing-logo {
+	content: url("../../../assets/images/subrains.png");
+	width: 170px;
+	height: auto !important;
+}
+
+.logo.scrolled {
+	content: url("../../../assets/images/logo1.png");
+	width: 85px;
+	height: 80px;
+	margin-top: 13%;
+}
+
+.navbar-nav{
+	&.collapse, &.collapsing{
+		width: 100%;
+		
+		@media screen and (min-width:768px){
+			width:auto;
+			display: flex;
+		}
+	}
+}

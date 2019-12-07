@@ -1,0 +1,74 @@
+@import "../../../styles/variables";
+
+.mentorSort {
+    padding-left: 0;
+    padding-right: 0px;
+    font-size: 15px;
+    margin-top: 30px;
+  .show{
+      display: flex;
+  }
+  .card {
+    box-shadow: 8px 7px 14px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    border-radius: 6px;
+  }
+  .card-body{
+    padding-top:0px;
+    padding-bottom: 0px;
+    .row{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    form{
+      padding: 10px 20px;
+      div{
+        margin: 0;
+        label{
+          margin-top: 1rem;
+        }
+        .form-control{
+          border-radius: 4px;
+        }
+      }
+      .slider {
+        @media(min-width: $breakpoint-tablet) {
+          margin: 1.5rem 0 0 -2rem;
+        }
+        .rangeslider-horizontal {
+          height: 5px;
+          border-radius: 10px;
+          box-shadow: none;
+          background: #000;
+          .rangeslider__fill {
+            background-color: #000;
+          }
+          .rangeslider__handle {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              top: 50%;
+              transform: translate3d(-50%, -50%, 0);
+              box-shadow: none;
+              background: #000;
+              border: none;
+              cursor: pointer;
+              display: inline-block;
+              position: absolute;
+  
+              &:focus{
+                outline: none;
+              }
+              &::after{
+                display: none;
+              }
+  
+              .rangeslider__handle-tooltip{
+                display: none;
+              }
+          }
+        }
+      }
+    }
+  }
+}

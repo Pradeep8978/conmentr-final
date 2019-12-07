@@ -1,0 +1,60 @@
+.dashboard {
+    .recent-session {
+        margin: 35px 0;
+        .cards {
+            min-height: 170px;
+            margin-left: 3%;
+        }
+        .session-card {
+           background:  linear-gradient(to right, #6d5cff, #985dff, #b75dff, #c65dff);
+           padding: 10px 35px;
+           box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .mentor-profile {
+            position: relative;
+            .mentor-image {
+                left: -60px;
+                top: -5px;
+                position: absolute;
+            }
+        }
+        .mentor-skill-section {
+            margin: 20px 0;
+            p {
+                font-size: 15px;
+            }
+            button {
+                font-size: 12px;
+                background: #e1c7fd;
+                border: 0;
+            }
+        }
+        .start-connect {
+            padding: 20px;
+            p {
+                font-family: Raleway-light;
+                font-size: 20px;
+            }
+            .purple-btn {
+                font-size: 17px;
+                display: inline-block;
+                padding: 2px 10px;
+            }
+        }
+    }
+    .ad-section {
+        margin: 20px;
+        text-align: center;
+    }
+    .connected-mentor {
+        .connected-mentor-image {
+            width: 40px;
+            height: 40px;
+        }
+        .connected-mentor-card {
+            padding: 25px;
+            box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;    
+        }
+    }
+}

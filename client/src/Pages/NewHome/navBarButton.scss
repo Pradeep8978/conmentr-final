@@ -1,0 +1,120 @@
+@media screen and (min-width: 250px) {
+  .Side_container{
+    position: relative;
+    margin-left:1vw;
+  }
+    .btnF{
+    background-color: white;
+    border: none;
+    color: #11AF99;
+    padding: .4vw 3.0vw;
+    text-align: center;
+    font-size: 1vw;
+    margin: 1vw .5vw;
+    transition: .3s;
+    box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+    border-radius:10px;
+  }
+  .btnF:hover {
+    background-color: #11AF99;
+    color: white;
+  }
+  .btnA{
+  background-color: white;
+  border: none;
+  color: #1BB6A1;
+  padding: .4vw 2.4vw;
+  text-align: center;
+  font-size: 1vw;
+  margin: 1vw .5vw;
+  transition: .3s;
+  box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+  border-radius:10px;
+}
+.btnA:hover {
+  background-color: #1BB6A1;
+  color: white;
+  opacity:.6;
+}
+.btnB {
+background-color: white;
+border: none;
+color: #25BFAA;
+padding: .4vw 3vw;
+text-align: center;
+font-size: 1vw;
+margin: 1vw .5vw;
+transition: .3s;
+box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+border-radius:10px;
+}
+.btnB:hover {
+background-color: #25BFAA;
+color: white;
+}
+.btnC {
+background-color: white;
+border: none;
+color: #2DC8B3;
+padding: .4vw 1.6vw;
+text-align: center;
+font-size: 1vw;
+margin: 1vw .5vw;
+transition: .3s;
+box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+border-radius:10px;
+}
+.btnC:hover {
+background-color: #2DC8B3;
+color: white;
+opacity:.7;
+}
+.btnD {
+background-color: white;
+border: none;
+color: #33CCB7;
+padding: .4vw 2vw;
+text-align: center;
+font-size: 1vw;
+margin: 1vw .5vw;
+transition: .3s;
+box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+border-radius:10px;
+}
+.btnD:hover {
+background-color: #33CCB7;
+color: white;
+}
+.btnE {
+background-color: white;
+border: none;
+color: #43DAC5;
+padding: .4vw 2vw;
+text-align: center;
+font-size: 1vw;
+margin: 1vw .5vw;
+transition: .3s;
+box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+border-radius:10px;
+margin-bottom:2vw;
+}
+.btnE:hover {
+background-color: #43DAC5;
+color: white;
+opacity:.7;
+}
+}
+  @media screen and (min-width: 250px){
+.text1{
+  margin-top:1.8vw;
+  font-size:.8vw;
+  color:#DA597E;
+  margin-left:.2vw;
+
+}
+.icon{
+ width:2vw;
+ height:2vw;
+ margin-left:1.5vw;
+}
+  }

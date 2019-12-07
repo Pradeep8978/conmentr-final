@@ -1,0 +1,23 @@
+@import './../../../styles/variables.scss';
+
+
+.mentorList {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 8px 7px 14px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #979797;
+  margin: 0 0 30px 0;
+  @media(min-width: $breakpoint-desktop) {
+    &:first-child {
+      margin-top: 75px;
+    }
+  }
+}
+.mentorWrap {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0px;
+  .mentorListHeading {
+    font-weight: 600;
+  }
+}

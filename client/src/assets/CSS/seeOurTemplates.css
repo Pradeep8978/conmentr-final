@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.a-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 100;
+  
+}
+@keyframes top {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+@keyframes bottom {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+.btn2 {
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 12px;
+  color: #111;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+.btn2::after, .btn2::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+}
+.btn2::before {
+  background-color: #66FCF1;
+  top: -0.75rem;
+  left: 0.5rem;
+  animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+.btn2::after {
+  background-color: #1F2833;
+  top: 3rem;
+  left: 13rem;
+  animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+.btn2:hover {
+  color: white;
+}
+.btn2:hover::before, .btn2:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  animation: none;
+}
+.btn2:hover::after {
+  left: 0rem;
+}
+.btn2:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}

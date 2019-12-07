@@ -1,0 +1,29 @@
+html, * {
+	font-family: 'Roboto', sans-serif;
+	
+}
+.box:hover {
+	box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+h2 {
+	text-align: center;
+}
+
+h4{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.hidden {
+	display: none
+}
+
+.shown {
+	display: block
+}
+p{
+	font-size:12px;
+	text-align: justify;
+	text-justify: inter-word;
+}

@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+.mentorCard{
+    background: #FFF;
+    border: none;
+    box-shadow: -3px 3px 5px 3px #ccc;
+    border-radius: 0;
+    .card-body{
+      img{
+        height: 115px;
+        width: 105px;
+      }
+      p{
+        font-size: $primary-font-size;
+        text-align: justify;
+      }
+      .btn{
+        &:focus{
+          box-shadow: none;
+          border: none;
+        }
+      }
+      .rate{
+        padding: 8px 0;
+      }
+     }
+ }
+
+.mentorCardHome {
+  background: #FFF;
+  border: none;
+  border-radius: 0;
+  .card-title {
+    font-size: 20px;
+  }
+  .mentor {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.req-mentorship-btn {
+  width: 170px;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #3023ae, #c86dd7);
+  label {
+    padding: 5px;
+  }
+}
+
+ // @media(min-width: $breakpoint-desktop){
+ //   .projectCard{
+ //     margin-left: -15px;
+ //   }
+ // }

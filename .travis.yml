@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "10"
+services:
+  - mongodb
+before_script:
+  - npm install-modules
+cache:
+  directories:
+    - node_modules

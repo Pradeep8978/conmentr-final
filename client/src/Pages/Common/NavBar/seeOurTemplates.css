@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.a-btn {
+  text-decoration: none;
+  font-weight: 100;
+  
+}
+
+
+.SeeBtn{
+  text-transform: none;
+  background-color: #11AF99;
+  border-color: aquamarine;
+  color:white;
+  border-radius:10px;
+  font-weight: 300;
+  font-size:12px;
+  padding:10px 20px;
+ 
+}
+.SeeBtn:hover{
+  background-color:white;
+  border:2px solid #11AF99;
+  color:#11AF99;
+  border-radius:10px;
+  font-weight: 300;
+  font-size:14px;
+  padding:10px 20px;
+  box-shadow: 0 2px 3px 4px solid aquamarine;
+
+}

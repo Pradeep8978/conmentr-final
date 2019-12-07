@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+.startupCard{
+    background: #FFF;
+    border: none;
+    border-bottom: 1px solid #F0f0f0;
+    border-bottom-width: thick;
+    box-shadow: -1px 2px 8px 1px #ccc;
+    border-radius: 0;
+    .card-body{
+      img{
+        min-height: 135px;
+        min-width: 135px;
+      }
+      p{
+        font-size: $primary-font-size;
+        text-align: justify;
+      }
+      .about-row{
+        margin-top: -50px;
+      }
+      .btn-wrapper{
+        left:25px;
+      }
+      .btn{
+        &:focus{
+          box-shadow: none;
+          border: none;
+        }
+      }
+      .rate{
+        padding: 8px 0;
+      }
+     }
+ }
+
+
+ // @media(min-width: $breakpoint-desktop){
+ //   .projectCard{
+ //     margin-left: -15px;
+ //   }
+ // }

@@ -1,0 +1,25 @@
+.payment{
+  .row{
+    min-height: 88vh;
+    div{
+      input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+
+      input[type="number"] {
+          -moz-appearance: textfield;
+      }
+      .form-control{
+        outline: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .btn-group{
+        button{
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}

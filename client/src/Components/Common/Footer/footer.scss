@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+
+.footer {
+  background: #292929;
+  height: auto;
+  margin-top: 0;
+  padding-bottom: 15px;
+  width: 100%;
+  border-top: 1px solid #DDDDDD;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 25px 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: -12px;
+    color: #FFFFFF;
+
+    li {
+      padding: 6px 0;
+      a {
+        padding: 0 0 8px;
+        display: block;
+      }
+    }
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+}
+
+.footer-bottom {
+  background: #292929;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  border-top: 1px solid #FFF;
+  p{
+    font-size: 14px;
+  }
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+}
+
+@media(max-width: $breakpoint-mobile){
+  .footer, .footer-bottom{
+    padding-left: 15px;
+    img{
+        margin-left: -15px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import './../../../styles/variables.scss';
+
+@media(min-width: $breakpoint-desktop){
+  .docWrap{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0px;
+  }
+}

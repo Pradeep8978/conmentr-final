@@ -1,0 +1,114 @@
+@import './../../styles/variables.scss';
+.sec-2{
+  overflow-y: hidden;
+}
+.close {
+  .fa {
+    color: white;
+    border: none;
+    font-size: 0.9vw;
+  }
+}
+
+#navbarSupportedContent {
+ .navbar-nav {
+  .nav-item {
+    padding-right: 5rem !important;
+    button {
+      box-shadow: 2px 4px 3px #BABABF;
+    }
+  }
+ } 
+}
+
+.fixed-top {
+  #navbarSupportedContent .navbar-nav .nav-item {
+    button {
+      box-shadow: none;
+    }
+  }
+  .btn-generic {
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #3023ae, #c86dd7);
+  }
+}
+
+.mentorIntro{
+  margin-bottom: 15%;
+}
+
+.mentor-select-card{
+  -webkit-box-shadow: 0 23px 41px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 23px 41px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+
+@media(min-width: $breakpoint-desktop){
+  .head-row{
+      height: 115vh;
+      overflow-x: hidden;
+  }
+}
+
+.btn1 {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  padding: 12px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn1:focus {
+  outline: none;
+}
+.btn--primary {
+  color: #1F2833;
+}
+.btn--border {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.btn--animated {
+  transition-property: #66FCF1;
+  transition-duration: 0.5s;
+}
+.btn--animated.btn--border.btn--primary {
+  border: 1px solid #1F2833;
+}
+.btn--animated:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1F2833;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.btn--animated:hover {
+  color: #66FCF1;
+}
+.btn--animated:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+
+.container-card{
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width:470px){
+.row1card{
+  padding-left:18%
+}}
+
+

@@ -1,0 +1,18 @@
+.blogCardII{
+  border: none;
+  .card-footer{
+    background-color: transparent;
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    font-weight: 700;
+  }
+  .card-body{
+    text-align: justify;
+    padding: 10px;
+    .card-title, .card-text{
+      color: #000;
+    }
+  }
+}

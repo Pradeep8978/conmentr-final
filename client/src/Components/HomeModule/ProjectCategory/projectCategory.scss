@@ -1,0 +1,32 @@
+.projForm{
+  .card{
+    border-radius: 0;
+  }
+  Form{
+    background: #FFF;
+    box-shadow: 0px 4px 3px #BABABF;
+    padding: 10px;
+
+    div{
+      input{
+        border: none;
+        background: #E9FDFC;
+        &:focus{
+          outline: none;
+        }
+      }
+      p{
+        margin-top: 3px;
+      }
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      border-radius: 0;
+    }
+
+    button{
+        margin-top: -5px;
+    }
+  }
+}

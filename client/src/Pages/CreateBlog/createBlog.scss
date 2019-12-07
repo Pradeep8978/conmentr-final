@@ -1,0 +1,29 @@
+.blog{
+  .medium-editor-placeholder-relative:after, .medium-editor-placeholder:after{
+    font-style: normal;
+  }
+  .blogger-profile{
+    margin-left: -6px;
+  }
+  .desc{
+    font-size: 14px;
+  }
+  .medium-editor-placeholder {
+    position: relative;
+    color: #b3b3b1;
+  }
+  .heading{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .medium-editor-element{
+    &:focus{
+      outline: none;
+    }
+  }
+  .editable {
+    min-height: 100vh;
+    font-size: 21px;
+    font-weight: 400;
+  }
+}

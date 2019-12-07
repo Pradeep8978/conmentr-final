@@ -1,0 +1,34 @@
+#section{
+    background-color: #00a2a3;
+    padding-bottom: 2%;
+}
+.progress-bar{
+    background-color: orange;
+    width: 50%;
+
+}
+.landing-logo {
+	content: url("../../assets/images/subrains.png");
+	width: 170px;
+	height: auto !important;
+}
+.fa-star i{
+color: deeppink;
+}
+.subcribe{
+    margin-top: -5%;
+    margin-bottom: -10%;
+    margin-left: 35%;
+    padding: 8px;
+}
+
+#jobs{
+    color: deeppink;
+}
+#card1{
+    background-color:#ff9966 ;
+    color: #3366ff;
+}
+#food{
+    color:deeppink;
+}

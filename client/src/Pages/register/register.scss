@@ -1,0 +1,109 @@
+// .signup{
+//   overflow-x: hidden;
+//   .signup-row{
+//     min-height: 98vh;
+//   }
+// }
+
+
+// @media(max-width: 768px) {
+//   .signup-row {
+//       min-height: auto;
+//       .headerImage {
+//           visibility: visible;
+//           position: absolute;
+//           z-index: -1;
+//           top: 0;
+//           right: 0;
+//       }
+//   }
+// }
+
+// @media(min-width: 768px) and (max-width: 1024px) {
+//   .signup-row {
+//       min-height: 95vh;
+//       .headerImage {
+//           height: auto;
+//           width: 580px;
+//           z-index: -1;
+//       }
+//   }
+// }
+
+body {
+	background-color: white;
+}
+
+.register-wrapper{
+input[type=text] {
+	border: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	background-color: #ECF0F1;
+	outline: none;
+	width: 100%;
+}
+
+input[type=password] {
+	border: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	background-color: #ECF0F1;
+	outline: none;
+	width: 100%;
+}
+
+.btn btn-primary btn-lg disabled {
+	width: 130%;
+}
+
+.btn {
+	color: white;
+	border-bottom: none;
+	border-right: none;
+	background-color: #00a2a3;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 5%;
+}
+.fbgoogle{
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	
+}
+@media Screen and (min-width: 1024px){
+	.fbgoogle{
+		margin-left:20px;
+	   
+	}
+}
+@media Screen and (min-width: 660px) and (max-width: 770px){
+	.fbgoogle{
+		margin-right:30px;
+	   
+	}
+}
+
+.fa {
+	padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+    color: white;
+
+}
+
+.fa-facebook {
+	background: rgb(44, 89, 185);
+	color: white;
+}
+
+
+.fa-google {
+	background: #be310d;
+	color: white;
+}
+}

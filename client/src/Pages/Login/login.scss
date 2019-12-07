@@ -1,0 +1,38 @@
+.login-row{
+    min-height: 95vh; 
+    .password-heading {
+        position: relative;
+        margin-bottom: 25px;
+        .rounded-box {
+            position: absolute;
+            top: -10px;
+            left: -75px;
+            width: 65px;
+            height: 65px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .login-row {
+        min-height: auto;
+        .headerImage {
+            visibility: visible;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .login-row {
+        min-height: 95vh;
+        .headerImage {
+            height: auto;
+            width: 580px;
+            z-index: -1;
+        }
+    }
+}

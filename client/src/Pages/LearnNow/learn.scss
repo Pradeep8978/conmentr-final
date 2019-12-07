@@ -1,0 +1,63 @@
+.learn-now {
+  font-family: 'Raleway';
+  #blah2 {
+    width: 100% !important;
+  }
+  nav {
+    position: static;
+  }
+  .bx--btn--primary {
+    margin-right: 10px;
+    padding: 0 30px;
+  }
+  select {
+    margin: 20px;
+  }
+  .dropdown-mode-select {
+    UL {
+      padding: 0;
+    }
+    .label {
+      color: #fff;
+    }
+    padding-top: 10px;
+  }
+  .compile-area {
+    font-size: 15px;
+    margin: 15px 0;
+    clear: both;
+    font-weight: 600;
+    font-size: 0.875rem;
+    .output-area {
+      border: 1px solid #3d70b2;
+      padding: 20px;
+      margin-top: 15px;
+      color: #fff;
+      .result-section {
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .html-output {
+    .bx--modal-container {
+      min-width: 1000px;
+      max-width: 90%;
+    }
+  }
+  .code-video-container {
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+    &>div {
+      margin: 0;
+      padding: 0;
+    }
+    .video-section {
+      .blur-clipper {
+        .bg {
+          background-image: none;
+        }
+      }
+    }
+  }
+}

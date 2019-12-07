@@ -1,0 +1,30 @@
+.mentor-votes {
+    padding: 10px;
+    min-height: 30vh;
+    .votes-container {
+        position: relative;
+        padding: 20px 0;
+    }
+    .vote-count {
+        width: 73px;
+        height: 69px;
+        opacity: 0.64;
+        box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.5);
+        border: solid 0 #bd10e0;
+        border-radius: 50%;
+        padding: 25px;
+        text-align: center;
+        color: #fff;
+        font-family: Dosis;
+    }
+    .vote-count-abs {
+        position: absolute;
+        left: -48px;
+    }
+    .vote-type {
+        font-size: 28px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        margin: 15px;
+    }
+}

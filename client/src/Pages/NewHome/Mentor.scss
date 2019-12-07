@@ -1,0 +1,64 @@
+@media screen and (min-width:260px){
+    .card{
+      box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 10px 0 rgba(17, 22, 26, 0.08);
+      border:none;
+      outline:none;
+      margin-top:.5vw;
+      margin-bottom:.3vw;
+    }
+    .card:hover{
+      box-shadow: 0 0 8px 0 rgba(0, 255, 255, 0.2), 0 4px 8px 0 rgba(0, 255, 255, 0.15), 0 8px 10px 0 rgba(0, 255, 255, 0.10);
+      border:none;
+      outline:none;
+    }
+    .user1{
+      width:3.8vw;
+      height:4.5vw;
+      clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+      position:relative;
+      margin-top:.8vw;
+      margin-left:-1.9vw;
+    }
+    .user1:hover{
+      transform: scale(1.15);
+      transition:.4s;
+    }
+    .fa-star{
+      color:	 #1aa3ff;
+      margin:.1vw .1vw;
+    }
+    .Google{
+      width:3.8vw;
+      height:1vw;
+      border-radius:.2vw;
+    }
+    .Request{
+      background-color: white;
+      border: none;
+      color: #1BB6A1;
+      padding:.4vw .0vw;
+      text-align: center;
+      font-size: .8vw;
+      transition: .3s;
+      box-shadow:0 2px 5px 2px rgba(33, 33, 33 ,.2);
+      border-radius:.3vw;
+      border:2px solid #1BB6A1;
+      width:100%;
+      margin-top:1vw;
+    }
+    .Request:hover{
+      background-color: #1BB6A1;
+      color: white;
+    }
+    .mentor_text1{
+      font-size:.8vw;
+      margin-top:.1vw;
+      margin-bottom:.8vw;
+    }
+    .mentor_text{
+      margin-top:.5vw;
+    }
+    .mentor_text2{
+        margin-top:1.5vw;
+      }
+  }

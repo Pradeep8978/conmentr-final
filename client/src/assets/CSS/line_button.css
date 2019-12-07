@@ -1,0 +1,35 @@
+.line{
+  background:#1F2833;
+  color:#66FCF1;
+  border:none;
+  position:relative;
+  height:60px;
+
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.line:hover{
+  background:#fff;
+  color:#1F2833;
+}
+.line:before,.line:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1F2833;
+  transition:400ms ease all;
+}
+.line:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.line:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

@@ -1,0 +1,17 @@
+.shit-container{
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .blogContainer{
+      box-shadow: 0px 4px 3px #BABABF;
+      height: 100vh;
+  }
+  .share-buttons{
+    .SocialMediaShareButton{
+      cursor: pointer;
+      outline: none;
+      margin-right: 2px;
+    }
+  }
+}

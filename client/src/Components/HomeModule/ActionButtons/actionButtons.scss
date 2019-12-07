@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+
+@media(min-width: $breakpoint-tablet) {
+  .actionButtons {
+    .card{
+      box-shadow: 4px 2px 26px -10px rgba(0, 0, 0, 0.5);
+      border: solid 0 #979797;
+      height: 100%;
+    }
+    .action-btns {
+      margin-bottom: 50px;
+      &:first-child {
+        margin-top: 80px;
+      }
+      i:before {
+        font-size: 25px;
+      }
+    }
+    .card-body{
+      padding: 15px 3px;
+    }
+    p{
+      font-size: 12px;
+    }
+    .fa{
+      font-size: 30px;
+      color: transparent;
+      -webkit-text-stroke-color: BLACK;
+      -webkit-text-stroke-width: 2px;
+      &::before {
+        font-size: 20px;
+      }
+    }
+  }
+}

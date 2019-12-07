@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+.projectFlat{
+    background: #FFF;
+    border: none;
+    border-bottom: 1px solid #F0f0f0;
+    border-bottom-width: thick;
+    box-shadow: -1px 2px 8px 1px #BABABF;
+    border-radius: 0;
+    .card-body{
+      img{
+        height: 115px;
+        width: 105px;
+      }
+      p{
+        font-size: $primary-font-size;
+        text-align: justify;
+      }
+      .about-row{
+        .tags{
+          background: #FFF;
+          color: #000;
+          border-radius: 0px;
+          padding: 10px 15px;
+          margin-right: 10px;
+          box-shadow: 0px 2px 5px #BABABF;
+        }
+      }
+      .btn-wrapper{
+        left:25px;
+      }
+      .btn{
+        &:focus{
+          box-shadow: none;
+          border: none;
+        }
+        font-size: 16px;
+        padding: 5px;
+      }
+      .rate{
+        padding: 8px 0;
+      }
+     }
+     .card-footer{
+       background: transparent;
+       padding: 5px;
+       border-top: none;
+     }
+ }
+
+
+ // @media(min-width: $breakpoint-desktop){
+ //   .projectCard{
+ //     margin-left: -15px;
+ //   }
+ // }

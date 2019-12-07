@@ -1,0 +1,15 @@
+.profileHeader{
+  .profile{
+    background: #d0e3ef;
+    min-height: 40vh;
+    .row{
+      .follow-button, .message-button{
+            height: 56px;
+      }
+    }
+  }
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

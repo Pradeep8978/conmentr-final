@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.sticky-overlay {
+    border-radius: 18px;
+    box-shadow: 4px 13px 7px -2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #979797;
+    z-index: 1;
+    @media(min-width: $breakpoint-desktop) {
+        position: fixed;
+        top: 100px;
+        right: 40px;
+    }
+}

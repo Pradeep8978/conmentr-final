@@ -1,0 +1,25 @@
+.login-form {
+  section{
+    button{
+      margin-top: -15px;
+    }
+  }
+  .next-wrapper{
+    width: 65px;
+    height: 25px;
+    button{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: #35E6EC;
+      box-shadow: 0px 4px 3px #BABABF;
+    }
+  }
+  label{
+    display: block;
+    margin: -14px auto 13%;
+    input{
+      margin-left: 15px;
+    }
+  }
+}

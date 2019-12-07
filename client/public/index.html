@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@9.7.0/css/carbon-components.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-south-1.amazonaws.com/www.conmentr.com/static/icon/flaticon.css">
+    <!--fonts-->
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-south-1.amazonaws.com/conmentr.com/icon/flaticon.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="node_modules/realtime-editor/realtime-editor.js"></script>
+    <script src="node_modules/socket.io-client/dist/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css"> -->
+<!-- <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> -->
+<style>
+	html,*{
+		font-family: 'Montserrat';
+	}
+</style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Conmentr</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      // This code loads the Gruveo Embed API code asynchronously.
+      var tag = document.createElement("script");
+      tag.src = "//www.gruveo.com/embed-api/";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+   
+      // This function gets called after the API code downloads. It creates
+      // the actual Gruveo embed and passes parameters to it.
+      var embed;
+      function onGruveoEmbedAPIReady() {
+        embed = new Gruveo.Embed("myembed", {
+          responsive: 1,
+          width: 680,
+          height: 465,
+          embedParams: {
+            color: "63b2de",
+            branding: false,
+            clientid: 'demo'
+          }
+        });
+        embed
+        .on("error", onEmbedError)
+        .on("requestToSignApiAuthToken", onEmbedRequestToSignApiAuthToken)
+        .on("stateChange", onEmbedStateChange);
+      }
+      function onEmbedError(e) {
+        console.error("Received error " + e.error + ".");
+      }
+      function onEmbedStateChange(e) {
+        if (e.state == "call") {
+          setTimeout(function() {
+            embed.end();
+          }, 500000);
+        }
+      }
+      function onEmbedRequestToSignApiAuthToken(e) {
+        // The below assumes that you have a server-side signer endpoint at /signer,
+        // where you pass e.token in the body of a POST request.
+        fetch('http://localhost:3009/signer', {
+          method: 'POST',
+          body: e.token
+        })
+          .then(function(res) {
+            if (res.status !== 200) {
+              return;  
+            }
+            res.text()
+              .then(function(signature) {
+                embed.authorize(signature);
+              });
+          });
+      }
+    </script>
+  </body>
+</html>

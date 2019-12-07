@@ -1,0 +1,16 @@
+.comments{
+  .liveComments{
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+  }
+  .form-group{
+    padding: 0;
+  }
+  textarea{
+  resize: none;
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
